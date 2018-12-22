@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_22_191325) do
+ActiveRecord::Schema.define(version: 2018_12_22_201435) do
 
   create_table "accounts", force: :cascade do |t|
     t.string "account_num"
@@ -67,7 +67,6 @@ ActiveRecord::Schema.define(version: 2018_12_22_191325) do
     t.string "size"
     t.string "img_url"
     t.integer "case_pack"
-    t.date "exp_date"
     t.integer "category_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -82,6 +81,7 @@ ActiveRecord::Schema.define(version: 2018_12_22_191325) do
     t.integer "vendor_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.date "exp_date"
     t.index ["product_id"], name: "index_vendor_products_on_product_id"
     t.index ["vendor_id"], name: "index_vendor_products_on_vendor_id"
   end
