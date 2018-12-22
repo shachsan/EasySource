@@ -4,6 +4,7 @@ class CreateProducts < ActiveRecord::Migration[5.2]
       t.integer :barcode
       t.string :name
       t.string :size
+      t.string :img_url
       t.integer :case_pack
       t.date :exp_date
       t.references :category, foreign_key: true
