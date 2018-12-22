@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  account_num: MyString
+  buyer: one
+  vendor: one
+
+two:
+  account_num: MyString
+  buyer: two
+  vendor: two

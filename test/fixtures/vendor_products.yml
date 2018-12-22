@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  v_item: MyString
+  case_price: 1.5
+  inventory: 1
+  product: one
+  vendor: one
+
+two:
+  v_item: MyString
+  case_price: 1.5
+  inventory: 1
+  product: two
+  vendor: two
