@@ -8,4 +8,6 @@ class ProductSerializer < ActiveModel::Serializer
   def category_type
     object.category.main_cat
   end
+
+ 
 end

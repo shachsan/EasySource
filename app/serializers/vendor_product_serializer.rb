@@ -1,5 +1,5 @@
 class VendorProductSerializer < ActiveModel::Serializer
-  attributes :id, :v_item, :vendor_id, :case_price, :vendor_name
+  attributes :id, :v_item, :case_price, :vendor_name
   belongs_to :product
   belongs_to :vendor
 
