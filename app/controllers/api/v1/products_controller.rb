@@ -1,5 +1,5 @@
 class Api::V1::ProductsController < ApplicationController
-    before_action :find_product, only:[:show]
+    before_action :find_product, only:[:show, :update]
 
     def index
         @products = Product.all 
@@ -8,6 +8,10 @@ class Api::V1::ProductsController < ApplicationController
 
     def show
         render json: @product
+    end 
+
+    def update
+        @product.update(product_params)
     end 
 
     private
