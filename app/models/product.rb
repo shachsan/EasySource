@@ -4,4 +4,7 @@ class Product < ApplicationRecord
   has_many :orders, through: :order_products
   has_many :vendor_products
   has_many :vendors, through: :vendor_products
+
+  validates :barcode, uniqueness: true
+  
 end
