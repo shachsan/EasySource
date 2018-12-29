@@ -7,6 +7,7 @@ class Api::V1::VendorProductsController < ApplicationController
 
     def create
         @vp=VendorProduct.create!(vp_params)
+        render json: @vp
     end
 
     private
