@@ -1,5 +1,5 @@
 class Api::V1::VendorProductsController < ApplicationController
-    before_action :find_vp, only:[:update]
+    before_action :find_vp, only:[:update, :destroy]
 
     def update
         @vp.update(vp_params)
@@ -7,6 +7,11 @@ class Api::V1::VendorProductsController < ApplicationController
 
     def create
         @vp=VendorProduct.create!(vp_params)
+        render json: @vp
+    end
+
+    def destroy
+        @vp.destroy
         render json: @vp
     end
 
