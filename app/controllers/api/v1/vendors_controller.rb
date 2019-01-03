@@ -10,6 +10,11 @@ class Api::V1::VendorsController < ApplicationController
         render json: @vendor
     end
 
+    def create
+        @vendor=Vendor.create!(vendor_params)
+        render json: @vendor
+    end
+
     def update
         @vendor.update(vendor_params)
         if @vendor.save
@@ -25,6 +30,6 @@ class Api::V1::VendorsController < ApplicationController
     end
 
     def vendor_params
-        params.permit(:username, :email, :address_st, :city, :zipcode, :phone, :has_min, :min_amount)
+        params.permit(:username, :email, :name, :address_st, :city, :zipcode, :phone, :has_min, :min_amount)
     end
 end
