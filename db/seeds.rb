@@ -7,6 +7,11 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 # Product.create(barcode:"", name: "", size: "", case_pack:, category_id: , img_url:"")
 
+Category.create(main_cat:'JAM')
+Category.create(main_cat:'COOKIES')
+Category.create(main_cat:'TEA')
+
+
 Product.create(barcode:"3045320001525", name:"Confiture Extra Fraises - Bonne Maman", size:"370 g", case_pack:12, brand:"Bonne Maman", category_id:1, img_url:"https://static.openfoodfacts.org/images/products/304/532/000/1525/front_fr.17.400.jpg")
 Product.create(barcode:"43647020017", name:"Black Cherry Conserve - Wilkin & Sons LTD", size:"340 g", case_pack:12, brand:"Tip tree", category_id:1, img_url:"https://static.openfoodfacts.org/images/products/004/364/702/0017/front_en.5.400.jpg")
 Product.create(barcode:"608938316165", name:"Coconut Spread - premium Srikaya - Hey Boo", size:"227 g", case_pack:12, brand:"Hey Boo", category_id:1, img_url:"https://static.openfoodfacts.org/images/products/060/893/831/6165/front_fr.8.400.jpg")
@@ -45,13 +50,13 @@ Product.create(barcode:"600456543987", name:"Bewley's Irish Breakfast Tea Bags",
 # has_min
 # min_amount
 
-Vendor.create(username:"test1", email:"test1@test.com", name:"Doras Natural", address_st:"125 7th st", city: "Brooklyn", zipcode:17389, phone:7189383983, has_min:true, min_amount:1000)
-Vendor.create(username:"test2", email:"test2@test.com", name:"Haddon House", address_st:"1475 Peter st", city: "New Jersey", zipcode:38982, phone:9193372288, has_min:false, min_amount:0)
-Vendor.create(username:"test3", email:"test3@test.com", name:"Steiner Foods", address_st:"600 Jersey Road", city: "New Jersey", zipcode:54655, phone:9195673673, has_min:true, min_amount:500)
-Vendor.create(username:"test4", email:"test4@test.com", name:"Baldor", address_st:"100 Newtown ave", city: "Staten Island", zipcode:10099, phone:6467368826, has_min:false, min_amount:0)
-Vendor.create(username:"test5", email:"test5@test.com", name:"Italian Products", address_st:"415 Highland Road", city: "New Jersey", zipcode:73652, phone:4148397687, has_min:true, min_amount:2000)
-Vendor.create(username:"test6", email:"test6@test.com", name:"European Imports", address_st:"12-45 Jenkin Rd", city: "Lansker", zipcode:14343, phone:2909938777, has_min:true, min_amount:2500)
-Vendor.create(username:"test7", email:"test7@test.com", name:"Manicaretti", address_st:"1900 Fulton st", city: "California", zipcode:56733, phone:294232332, has_min:false, min_amount:0)
+# Vendor.create(username:"test1", email:"test1@test.com", name:"Doras Natural", address_st:"125 7th st", city: "Brooklyn", zipcode:17389, phone:7189383983, has_min:true, min_amount:1000)
+# Vendor.create(username:"test2", email:"test2@test.com", name:"Haddon House", address_st:"1475 Peter st", city: "New Jersey", zipcode:38982, phone:9193372288, has_min:false, min_amount:0)
+# Vendor.create(username:"test3", email:"test3@test.com", name:"Steiner Foods", address_st:"600 Jersey Road", city: "New Jersey", zipcode:54655, phone:9195673673, has_min:true, min_amount:500)
+# Vendor.create(username:"test4", email:"test4@test.com", name:"Baldor", address_st:"100 Newtown ave", city: "Staten Island", zipcode:10099, phone:6467368826, has_min:false, min_amount:0)
+# Vendor.create(username:"test5", email:"test5@test.com", name:"Italian Products", address_st:"415 Highland Road", city: "New Jersey", zipcode:73652, phone:4148397687, has_min:true, min_amount:2000)
+# Vendor.create(username:"test6", email:"test6@test.com", name:"European Imports", address_st:"12-45 Jenkin Rd", city: "Lansker", zipcode:14343, phone:2909938777, has_min:true, min_amount:2500)
+# Vendor.create(username:"test7", email:"test7@test.com", name:"Manicaretti", address_st:"1900 Fulton st", city: "California", zipcode:56733, phone:294232332, has_min:false, min_amount:0)
 
 
 
@@ -93,10 +98,10 @@ VendorProduct.create(v_item:"TEA11", product_id:18, vendor_id:6, case_price:74, 
 # phone
 
 
-Buyer.create(username:"btest1", email:"btest1@test.com", name:"Walmart", address_st:"125 114th st", city: "Brooklyn", zipcode:17389, phone:7189383983)
-Buyer.create(username:"btest2", email:"btest2@test.com", name:"Whole Foods", address_st:"611 6th ave", city: "New York", zipcode:10012, phone:2123101934)
-Buyer.create(username:"btest3", email:"btest3@test.com", name:"CVS", address_st:"500 10th ave", city: "New York", zipcode:10036, phone:2123456789)
-Buyer.create(username:"btest4", email:"btest4@test.com", name:"Food Emporium", address_st:"415 Dyer Ave", city: "New Jersey", zipcode:10099, phone:9178378783)
-Buyer.create(username:"btest5", email:"btest5@test.com", name:"Citarella", address_st:"212 14th st", city: "New York", zipcode:12022, phone:2127875656)
-Buyer.create(username:"btest6", email:"btest6@test.com", name:"Trader Joe", address_st:"1400 1st ave", city: "New York", zipcode:11011, phone:2129085676)
-Buyer.create(username:"btest7", email:"btest7@test.com", name:"Gourmet Garage", address_st:"250 Fulton st", city: "New York", zipcode:10019, phone:2122263489)
+# Buyer.create(username:"btest1", email:"btest1@test.com", name:"Walmart", address_st:"125 114th st", city: "Brooklyn", zipcode:17389, phone:7189383983)
+# Buyer.create(username:"btest2", email:"btest2@test.com", name:"Whole Foods", address_st:"611 6th ave", city: "New York", zipcode:10012, phone:2123101934)
+# Buyer.create(username:"btest3", email:"btest3@test.com", name:"CVS", address_st:"500 10th ave", city: "New York", zipcode:10036, phone:2123456789)
+# Buyer.create(username:"btest4", email:"btest4@test.com", name:"Food Emporium", address_st:"415 Dyer Ave", city: "New Jersey", zipcode:10099, phone:9178378783)
+# Buyer.create(username:"btest5", email:"btest5@test.com", name:"Citarella", address_st:"212 14th st", city: "New York", zipcode:12022, phone:2127875656)
+# Buyer.create(username:"btest6", email:"btest6@test.com", name:"Trader Joe", address_st:"1400 1st ave", city: "New York", zipcode:11011, phone:2129085676)
+# Buyer.create(username:"btest7", email:"btest7@test.com", name:"Gourmet Garage", address_st:"250 Fulton st", city: "New York", zipcode:10019, phone:2122263489)
