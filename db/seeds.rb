@@ -7,9 +7,9 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 # Product.create(barcode:"", name: "", size: "", case_pack:, category_id: , img_url:"")
 
-Category.create(main_cat:'JAM')
-Category.create(main_cat:'COOKIES')
-Category.create(main_cat:'TEA')
+# Category.create(main_cat:'JAM')
+# Category.create(main_cat:'COOKIES')
+# Category.create(main_cat:'TEA')
 
 
 Product.create(barcode:"3045320001525", name:"Confiture Extra Fraises - Bonne Maman", size:"370 g", case_pack:12, brand:"Bonne Maman", category_id:1, img_url:"https://static.openfoodfacts.org/images/products/304/532/000/1525/front_fr.17.400.jpg")
